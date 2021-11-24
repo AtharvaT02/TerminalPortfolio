@@ -1,0 +1,99 @@
+@font-face {
+    font-family: ocra;
+    src: url(/assets/OCRAEXT.TTF);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2D2D2D;
+    overflow: hidden;
+    header{
+        margin: 0vh;
+        height: 38vh;
+        padding-top: 2vh;
+        overflow: hidden;
+        .computerlot{
+            position: absolute;
+            top: -3vh;
+            right: -3vw;
+            overflow: hidden;
+        }
+        .hackerlot{
+            position: absolute;
+            top: -2vh;
+            left: -3vw;
+            overflow: hidden;
+        }
+        svg{
+            height: 5vw;
+            position: relative;
+            
+        }
+        p{  
+            position: relative;
+            width: 70%;
+            margin-top: 3vw;
+            font-family: ocra;
+            color: #00ff0a;
+            font-size: 1.8vw;
+        }
+    }
+    hero{
+        display: flex;
+        height: 60vh;
+        justify-content: space-between;
+        font-family: ocra;
+        
+        .commandslist{
+            margin: 0;
+            padding: 1vh 0 1vh 1vh;
+            width: 18vw;
+            height: 50vh;
+            border-width:5px 5px 5px 0;
+            border-radius:0 10% 10% 0;
+            border-style:solid;
+            border-color:rgb(241, 241, 241);
+            font-size: 1.2vw;
+            color: #FF6B00;
+            span{
+                color: #0BFFF0;
+            }
+        }
+        .terminal{
+            margin: 0;
+            width: 50vw;
+            height: 55vh;
+            border-width:5px;
+            border-radius:2vw;
+            border-style:solid;
+            border-color:rgb(241, 241, 241);
+        }
+        .socialsSection{
+            margin: 0;
+            width: 18vw;
+            height: 50vh;
+            padding: 1vh 0 1vh 1vw;
+            border-width:5px 0px 5px 5px;
+            border-radius:10% 0% 0% 10%;
+            border-style:solid;
+            border-color:rgb(241, 241, 241);
+            font-size: 1.8vw;
+            color: #00FFC2;
+            .logos{
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 10vh;
+
+                img{
+                    height: 2vw;
+                    
+                }
+            }
+            p{  
+                font-size: 1.3vw;
+                color: white;
+            }
+        }
+    }
+}
