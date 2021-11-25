@@ -2,6 +2,7 @@
     font-family: ocra;
     src: url(../assets/OCRAEXT.TTF);
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -29,7 +30,7 @@ body{
             position: relative;
             
         }
-        p{  
+        p{
             position: relative;
             width: 70%;
             margin-top: 3vw;
@@ -59,14 +60,52 @@ body{
                 color: #0BFFF0;
             }
         }
-        .terminal{
+        .container{
             margin: 0;
-            width: 50vw;
-            height: 55vh;
-            border-width:5px;
-            border-radius:2vw;
-            border-style:solid;
-            border-color:rgb(241, 241, 241);
+                width: 50vw;
+                height: 55vh;
+                border-width:5px;
+                border-radius:2vw;
+                border-style:solid;
+                border-color:rgb(241, 241, 241);
+                font-family: ocra;
+                font-weight: 200;
+                font-size: 14px;
+                padding: 0.5vw;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;     
+                overflow-y: auto;
+            
+                
+            p{
+                color: rgb(255, 102, 0);
+                font-size: 1.5vw;
+            }
+            .terminal{
+                margin: 0;
+                width: 49vw;
+                height: 53vh;
+                border-width:0px;
+                border-radius:0vw;
+                border-style:solid;
+                border-color:rgb(241, 241, 241);
+                color: rgb(255, 0, 212);
+                font-family: ocra;
+                font-weight: 200;
+                font-size: 14px;
+                span{
+                    font-weight: bolder;
+                }
+                
+                &::after {
+                    content: "|";
+                    animation: blink 2s steps(1) infinite;
+                }
+                
+            }
         }
         .socialsSection{
             margin: 0;
@@ -96,4 +135,25 @@ body{
             }
         }
     }
+}
+
+.prompt {
+	color: rgb(189, 227, 113);
+}
+
+.path {
+	color: rgb(94, 215, 255);
+}
+
+@keyframes blink { 50% { color: transparent; } }
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-1000px);
+  }
+  60% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
