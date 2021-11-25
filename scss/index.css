@@ -10,6 +10,28 @@ body {
   overflow: hidden;
 }
 
+body .loader {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 98vw;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #2d2d2d;
+  top: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
 body header {
   margin: 0vh;
   height: 38vh;

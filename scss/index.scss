@@ -8,6 +8,22 @@ body{
     padding: 0;
     background-color: #2D2D2D;
     overflow: hidden;
+    .loader {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 98vw;
+        position: sticky;
+        background-color: #2d2d2d;
+        top: 0%;
+        left: 0%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
     header{
         margin: 0vh;
         height: 38vh;

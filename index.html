@@ -12,6 +12,10 @@
 </head>
 <script src="terminal.js"></script>
 <body>
+    <div class="loader">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_faetfrht.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
     <header>
         <div class="computerlot">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -64,7 +68,11 @@
         </div>
     </hero>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="terminal.js"></script>
-
+    <script>
+        setTimeout(function () {
+            $('.loader').fadeToggle(2000);
+        }, 3000);
+    </script>
 </body>
 
 </html>
