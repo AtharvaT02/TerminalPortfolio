@@ -15,7 +15,7 @@ $(document).ready(function() {
 
         function help() {
                         terminal.append(" whoami : Personal info\n ifconfig : Skills\n nc : Education\n autospy : Project\n nmap : POR & ECA\n");
-                        
+                        document.getElementById("terminal").style.color = "#ff6600";
                         
         }
 
